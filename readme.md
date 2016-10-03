@@ -1,6 +1,6 @@
 # Tasker
 
-Tasker is a basic task managing system built with laravel.if you need some basic task management system then use this to save your time.
+Tasker is a basic task managing system building with laravel.if you need some basic task management system then use this to save your time.
 
 ##Contributing
 
