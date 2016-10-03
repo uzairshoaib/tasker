@@ -17,3 +17,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::group(['middleware' => 'auth'], function(){
+	Route::group(['prefix' => 'group'], function(){
+		Route::get('/', 'GroupController@index');
+		Route::get('create', 'GroupController@create');
+		Route::post('store', 'GroupController@store');
+		Route::get('{group}/edit', 'GroupController@edit');
+		Route::patch('{group}', 'GroupController@update');
+		Route::delete('{group}/delete', 'GroupController@destroy');
+	});
+});

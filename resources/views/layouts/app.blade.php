@@ -13,6 +13,7 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css"/>
     {{-- other stylesheets goes here start --}}
     @yield('stylesheets')
@@ -23,7 +24,6 @@
     <title>{{ config('app.name', 'Tasker') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -449,6 +449,7 @@
     <script src="/assets/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
     <script src="/assets/js/main.js" type="text/javascript"></script>
     <script src="/assets/lib/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/js/app.js" type="text/javascript"></script>
     {{-- other scripts goes here start --}}
     @yield('scripts')
     {{-- other scripts goes here end --}}
